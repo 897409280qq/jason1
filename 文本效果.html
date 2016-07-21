@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>文本效果</title>
+        <style>
+            .bold_text{
+                /*font-weight 默认值为normal bold 定义粗体字符
+                bolder 定义更粗的字符 lighter 定义更细的字符
+                inherit从父元素继承字体的粗细
+                100 -- 900     400相当于normal  700等同于bold 
+                */
+                /*font-weight改变字体粗细*/
+                font-weight:100;
+            }
+            .italic_text{
+                /*font-style:默认值normal italic 显示斜体  oblique显示一个倾斜的字符 
+                 */
+                font-style: italic;
+            }
+            .underline_text{
+                /*text-decoration 默认 normal  underline定义文本下的一条线 
+                  overline 定义文本上的一条线   line-through 穿过文本的一条线*/
+                text-decoration: underline;
+            }
+            .delete_text{
+                text-decoration: line-through;
+            }
+            .quotes{
+                /*属性设置嵌套引用的引号类型*/
+                quotes: '『' '』' '『' '』' ;
+            }
+        </style>
+    </head>
+    <body>
+        普通文本<br>
+        <!--span没有啥特殊效果 表示一般内容-->
+        <span>普通文本</span><br>
+        <!--strong加粗效果 标签带有很强的含义 标识内容的重要-->
+        <strong>有多大的思想，才有多大的能量。</strong><br>
+        <!--b加粗文本 b标签强调含义比较弱-->
+        <b>励志是给人快乐，激励是给人痛苦。</b><br>
+        <span class="bold_text">当你没有借口的那一刻，就是你成功的开始。</span><br>
+        <!--em斜体文本 带有很强的强调含义表示内的重要性-->
+        <em>命运是可以改变的。</em><br>
+        <!--i斜体文本 强调含义弱-->
+        <i>成功者绝不放弃</i><br>
+        <span class="italic_text">成功永远属于马上行动的人</span><br>
+        <!--ins下划线文本 带有插入含义 表示是新增的内容-->
+        <ins>下定决心一定要，才是成功的关键。</ins><br>
+        <!--u下划线文本 没有特殊含义 只是单纯的增加下划线效果-->
+        <u>九十九次的理论不如一次的行动来得实际。</u><br>
+        <span class="underline_text">一个胜利者不会放弃，而一个放弃者永远不会胜利</span><br>
+        
+        <!--del删除线文本 带有删除含义 表示已经废除的内容-->
+        <del>信心、毅力、勇气三者具备，则天下没有做不成的事。</del><br>
+        <!--s删除线文本 表示的含义比较弱-->
+        <s>一个缺口的杯子，如果换一个角度看它，它仍然是圆的。</s><br>
+           <!--使用样式形成效果 没有任何含义-->
+        <span class="delete_text">一个人的快乐，不是因为他拥有的多，而是他计较的少。</span><br>
+        <!--small比正常字体小 小字号-->
+        <small>世间成事，不求其绝对圆满，留一份不足，可得无限美好。</small><br>
+        <!--sup指的上标文字-->
+        你要做多大的事情，<sup>就该承受多大的压力</sup><br>
+        <!--sub下标文字-->
+        你要做多大的事情，<sub>就该承受多大的压力</sub><br>
+        
+        <!--q带有引号的文本-->
+        <q>羡慕别人得到的，不如珍惜自己拥有的</q><br>
+        <q>活在忙与闲的两种境界里，才能俯仰自得，<q>享受生活的乐趣，</q>成就人生的意义。</q><br>
+        
+       <q class="quotes">生命之长短殊不重要，<q>只要你活得快乐，</q>在有生之年做些有意义的事，便已足够</q>
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
